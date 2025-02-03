@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#sobre">Sobre mim</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#cursos">Cursos</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="hero">
+            <div class="hero-container">
+                <img src="images/banner.png" alt="Banner do portfólio" class="hero-image">
+            </div>
+        </section>
+
+        <section id="sobre">
+            <h2>Sobre mim</h2>
+            <p>Oie! Meu nome é Debora, tenho 20 anos, sou de MInas Gerais e sou estudante de Análise e Desenvolvimento de Sistemas na Unicesumar. No momento estou aprendendo na área de Front-End mas, futuramente, pretendo conhecer um pouco mais de cada!</p>
+        </section>
+
+        <section id="projetos">
+            <h2>Projetos</h2>
+            <div class="projeto">
+                <img src="images/projeto1.png" alt="Projeto 1" class="projeto-imagem">
+                <div class="projeto-texto">
+                    <h3>Cacluladora de Churrasco</h3>
+                    <p>Tem como objetivo fornecer uma quantidade aproximada de ingredientes para que você realize seu churrasco, evitando desperdício e garantindo também economia. Feita com HTML, CSS e JavaScript. </p>
+                    <a href="https://deboralorayne.github.io/calculadora-churrasco/" target="_blank">Ver projeto</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="cursos">
+            <h2>Cursos</h2>
+            <p>Aqui estão alguns cursos que concluí e seus conteúdos:</p>
+            <p>Todos os meus certificados podem ser vistos no seguinte link: 
+                <a href="https://www.linkedin.com/in/debora-lorayne-4a577a234" target="_blank" style="color: #FF007F; text-decoration: none;">Certificados no LinkedIn</a>
+            <div class="cursos-container">
+                <div class="curso">
+                    <img src="images/dio.jpeg" alt="Logo da Empresa 1" class="curso-logo">
+                    <div class="curso-texto">
+                        <h3>Formação Lógica de programação</h3>
+                        <p>Aprendi os algoritmos e toda a lógica de programção. Introdução ao JavaScript, HTML e CSS.</p>
+                    </div>
+                </div>
+                <div class="curso">
+                    <img src="images/unicesumar.png" alt="Logo da Empresa 2" class="curso-logo">
+                    <div class="curso-texto">
+                        <h3>Assistente de Programador</h3>
+                        <p>Pela conclusão do 1º ano do curso superior de Tecnologia em Análise e Desenvolvimento de Sistemas com certificação de Assistente de Programador com 640 horas.</p>
+                    </div>
+                </div>
+                <div class="curso">
+                    <img src="images/udemy.png" alt="Logo da Empresa 3" class="curso-logo">
+                    <div class="curso-texto">
+                        <h3>Banco de Dados e SQL | Completo</h3>
+                        <p>Aprendi a criar e gerenciar bancos de dados, escrever consultas para buscar e modificar informações, trabalhar com tabelas e relacionamentos, otimizar o desempenho e garantir a segurança dos dados.</p>
+                    </div>
+                </div>
+                <div class="curso">
+                    <img src="images/fgv.jpeg" alt="Logo da Empresa 2" class="curso-logo">
+                    <div class="curso-texto">
+                        <h3>Álgebra Linear e Ciência de Dados</h3>
+                        <p>Aprendi sobre vetores, matrizes e transformações lineares, aplicando esses conceitos na análise e modelagem de dados.</p>
+                    </div>
+                </div>
+            </div>
+        
+        </section>
+
+        <section id="contato">
+            <h2>Contato</h2>
+            <p>Você pode me encontrar em:</p>
+            <div class="social-icons">
+                <a href="https://github.com/deboralorayne" target="_blank" aria-label="GitHub">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="https://www.linkedin.com/in/debora-lorayne-4a577a234/" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="https://www.instagram.com/dprdebora" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i> Instagram
+                </a>
+                <a href="mailto:deboralorrayne23@gmail.com?subject=Contato%20do%20site&body=Olá%2C%20meu%20nome%20é%20[Seu%20Nome]%20e%20gostaria%20de%20entrar%20em%20contato." aria-label="Email">
+                    <i class="fas fa-envelope"></i> Email
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Debora Lorayne Ferreira Manoel</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <!-- Modal do Email -->
+    <div id="emailModal" class="modal">
+        <div class="modal-content">
+            <span id="closeModal" class="close">&times;</span>
+            <h2>Meu Email</h2>
+            <p>deboralorrayne23@gmail.com</p>
+        </div>
+    </div>
+</body>
+</html>
