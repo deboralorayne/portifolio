@@ -35,3 +35,8 @@ if (modal && closeModal) {
 } else {
     console.error('Modal ou botão de fechar não encontrado!');
 }
+
+function toggleMenu() {
+    const menu = document.querySelector('nav ul');
+    menu.classList.toggle('active');
+}
