@@ -64,6 +64,12 @@ nav ul li a:hover {
     transform: translateY(-3px);
 }
 
+/* Esconder o ícone de hambúrguer no desktop */
+.menu-toggle {
+    display: none;
+}
+
+/* Estilos para dispositivos móveis */
 @media (max-width: 768px) {
     nav ul {
         flex-direction: column;
@@ -72,6 +78,44 @@ nav ul li a:hover {
 
     nav ul li a {
         padding: 10px; /* Padding ajustado para telas pequenas */
+    }
+
+    /* Menu em lista vertical */
+    nav ul {
+        display: none; /* Esconde o menu por padrão */
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    nav ul.active {
+        display: flex; /* Exibe o menu quando ativado */
+    }
+
+    /* Estilos para o botão de "hamburguer" */
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+        font-size: 30px;
+        color: #333;
+        background: transparent;
+        border: none;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    nav a {
+        color: #fff;
+        font-size: 18px;
+        padding: 10px;
+        text-align: center;
+        display: block;
     }
 }
 
@@ -314,4 +358,31 @@ footer p {
 /* Impede a rolagem da página quando o modal está aberto */
 body.modal-open {
     overflow: hidden;
+}
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 768px) {
+    /* Ajuste na seção de contato */
+    .social-icons a {
+        font-size: 1.2rem; /* Tamanho reduzido dos ícones */
+        margin: 0 5px; /* Espaçamento reduzido entre os ícones */
+        display: inline-block; /* Exibe os ícones em linha */
+        padding: 0; /* Remove padding extra */
+    }
+
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px; /* Espaçamento reduzido entre os ícones */
+    }
+
+    .social-icons p {
+        display: none; /* Esconde o texto "Você pode me encontrar em:" */
+    }
+
+    /* Esconde o texto dentro dos links dos ícones */
+    .social-icons a span {
+        display: none;
+    }
 }
