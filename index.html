@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <button class="menu-toggle" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i> <!-- Ícone de hambúrguer -->
+        </button>
+        <ul>
+            <li><a href="#sobre">Sobre mim</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="hero">
+            <div class="hero-container">
+                <img src="images/banner.png" alt="Banner do portfólio" class="hero-image">
+            </div>
+        </section>
+
+        <section id="sobre">
+            <h2>Sobre mim</h2>
+            <p>Sou apaixonada por tecnologia, especialmente pelas áreas de full stack, dados e inteligência artificial. Tenho mais de 3 anos de experiência na área, atuando com suporte técnico e desenvolvendo pequenas aplicações para automatizar processos internos. Além disso, possuo habilidades em design e marketing, que contribuem significativamente para o meu desenvolvimento profissional.
+                Atualmente, sou estudante de Análise e Desenvolvimento de Sistemas pela faculdade Unicesumar, onde fui contemplada com uma bolsa integral (100%) pelo ProUni. Sou entusiasta do aprendizado contínuo e do desenvolvimento de soluções; estou em constante evolução, sempre buscando aprimorar minhas habilidades técnicas e criativas.</p>
+        </section>
+
+        <section id="tecnologias">
+            <h2>Tecnologias</h2>
+            <p>Estas são algumas das tecnologias que conheço ou que estou estudando:</p>
+            <div class="tecnologias-grid">
+                <img src="images/html5.svg" alt="HTML5" title="HTML5">
+                <img src="images/css.svg" alt="CSS3" title="CSS3">
+                <img src="images/javascript.svg" alt="JavaScript" title="JavaScript">
+                <img src="images/python.svg" alt="Python" title="Python">
+                <img src="images/mysql.svg" alt="MySQL" title="MySQL">
+                <img src="images/postgresql.svg" alt="PostgreSQL" title="PostgreSQL">
+            </div>
+        </section>
+        
+        
+        <section id="projetos">
+            <h2>Projetos</h2>
+        
+            <!-- Projeto 1 -->
+            <div class="projeto">
+                <img src="images/projeto1.png" alt="Projeto 1" class="projeto-imagem">
+                <div class="projeto-texto">
+                    <h3>Calculadora de Churrasco</h3>
+                    <p>Tem como objetivo fornecer uma quantidade aproximada de ingredientes para que você realize seu churrasco, evitando desperdício e garantindo também economia. Feita com HTML, CSS e JavaScript.</p>
+                    <a href="https://deboralorayne.github.io/calculadora-churrasco/" target="_blank">Ver projeto</a>
+                </div>
+            </div>
+        
+            <!-- Projeto 2 -->
+            <div class="projeto">
+                <img src="images/projeto2.png" alt="Projeto 2" class="projeto-imagem">
+                <div class="projeto-texto">
+                    <h3>Biblioteca UniCesumar</h3>
+                    <p>O projeto consiste em uma aplicação web desenvolvida com Java (Servlet + JSP), permitindo ao usuário cadastrar livros em uma biblioteca e visualizar a lista de livros já registrados. É uma aplicação básica voltada para fins didáticos, demonstrando a integração entre front-end (HTML + CSS) e back-end (Servlets).</p>
+                    <a href="https://github.com/deboralorayne/biblioteca-unicesumar" target="_blank">Ver projeto</a>
+                </div>
+            </div>
+             <!-- Projeto 3 -->
+             <div class="projeto">
+                <img src="images/projeto3.png" alt="Projeto 2" class="projeto-imagem">
+                <div class="projeto-texto">
+                    <h3>Painel Interativo no Looker Studio</h3>
+                    <p>Tem o objetivo de otimizar o acompanhamento de requisições de equipamentos realizadas pelas filiais da empresa. Esse relatório foi pensado para apoiar as áreas de Infraestrutura e Suporte, trazendo mais clareza e agilidade na análise dos dados, que antes eram tratados de forma manual e descentralizada.</p>
+                    <a href="https://www.linkedin.com/posts/deboralorayne_essa-semana-desenvolvi-um-painel-interativo-activity-7354586807201685504-goBo?utm_source=share&utm_medium=member_desktop&rcm=ACoAADp9kT0BF2hqJnCwle8BYpRaoazeTQrGHzg" target="_blank">Ver projeto</a>
+                </div>
+        </section>
+
+        <section id="codigo-rosa">
+            <h2>outros</h2>
+            <div class="projeto">
+                <img src="images/codigorosa.png"Projeto Código Rosa" class="projeto-imagem">
+                <div class="projeto-texto">
+                    <h3>Código Rosa</h3>
+                    <p>O Código Rosa é um projeto voluntário criado para incentivar meninas e mulheres a entrarem na área da tecnologia por meio de eventos, oficinas e mentoria.</p>
+                    <a href="https://linktr.ee/thecodigorosa" target="_blank">Saiba mais</a>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contato">
+            <h2>Contato</h2>
+            <div class="social-icons">
+                <a href="https://github.com/deboralorayne" target="_blank" aria-label="GitHub">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="https://www.linkedin.com/in/deboralorayne/" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="mailto:deboralorrayne23@gmail.com?subject=Contato%20do%20site&body=Olá%2C%20meu%20nome%20é%20[Seu%20Nome]%20e%20gostaria%20de%20entrar%20em%20contato." aria-label="Email">
+                    <i class="fas fa-envelope"></i> Email
+                </a>
+                <a href="https://wa.me/5535987066779" target="_blank" aria-label="WhatsApp">
+                    <i class="fab fa-whatsapp"></i> WhatsApp
+                </a>
+                
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Debora Lorayne Ferreira Manoel</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <!-- Modal do Email -->
+    <div id="emailModal" class="modal">
+        <div class="modal-content">
+            <span id="closeModal" class="close">&times;</span>
+            <h2>Meu Email</h2>
+            <p>deboralorrayne23@gmail.com</p>
+        </div>
+    </div>
+</body>
+</html>

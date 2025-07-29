@@ -1,0 +1,357 @@
+:root {
+    --color-primary: #ff009d;              /* Vinho escuro / marrom elegante */
+    --color-secondary: #ff009d;            /* Tom complementar mais suave */
+    --color-background: #ffc6e6;           /* Bege claro / areia */
+    --color-section: #ffffff;              /* Branco puro para seções */
+    --color-text: #1a1a1a;                 /* Preto suave para textos */
+    --color-text-light: #555555;           /* Cinza médio para textos secundários */
+    --color-hover: rgba(206, 0, 137, 0.1);   /* Hover sutil com vinho/marrom claro */
+    --font-size-large: 2rem;
+    --font-size-medium: 1.5rem;
+    --font-size-small: 1rem;
+    --spacing-medium: 20px;
+    --spacing-small: 10px;
+    --border-radius: 10px;
+}
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--color-background);
+    color: var(--color-text);
+    line-height: 1.6;
+}
+
+/* Menu de navegação */
+nav {
+    background-color: #ffc6e6;
+    border-bottom: 1px solid #ffc6e6;
+    padding: 10px 20px; /* Reduzi o padding para ficar menor */
+    text-align: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Espaço entre os itens reduzido */
+}
+
+nav ul li a {
+    color: var(--color-text);
+    text-decoration: none;
+    font-size: 16px; /* Tamanho da fonte reduzido */
+    padding: 8px 12px; /* Padding menor para os links */
+    border-radius: 50px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: var(--color-hover);
+    color: var(--color-primary);
+    transform: translateY(-3px);
+}
+
+/* Esconder o ícone de hambúrguer no desktop */
+.menu-toggle {
+    display: none;
+}
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px; /* Espaçamento menor em telas pequenas */
+    }
+
+    nav ul li a {
+        padding: 10px; /* Padding ajustado para telas pequenas */
+    }
+
+    /* Menu em lista vertical */
+    nav ul {
+        display: none; /* Esconde o menu por padrão */
+        flex-direction: column;
+        background-color: #333333;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    nav ul.active {
+        display: flex; /* Exibe o menu quando ativado */
+    }
+
+    /* Estilos para o botão de "hamburguer" */
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+        font-size: 30px;
+        color: #333333;
+        background: transparent;
+        border: none;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    nav a {
+        color: #fff;
+        font-size: 18px;
+        padding: 10px;
+        text-align: center;
+        display: block;
+    }
+}
+
+/* Banner (Hero) */
+#hero {
+    position: relative;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.hero-image {
+    width: 100%; /* Imagem ocupa toda a largura da tela */
+    height: auto; /* Mantém a proporção */
+    display: block; /* Remove qualquer espaço extra ao redor da imagem */
+    margin: 0; /* Remove margens externas */
+    padding: 0; /* Remove paddings internos */
+}
+
+/* Seções */
+section {
+    padding: var(--spacing-medium);
+    margin: var(--spacing-medium);
+    background-color: var(--color-section);
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 10px rgba(219, 0, 110, 0.76);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px var(--color-hover);
+}
+
+h2 {
+    color: var(--color-primary);
+    font-size: var(--font-size-large);
+    margin-bottom: var(--spacing-medium);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.tecnologias-grid {
+    display: flex;
+    flex-wrap: wrap;            /* Quebra para linha de baixo se não couber */
+    justify-content: left-;    /* Centraliza na horizontal */
+    align-items: center;
+    gap: 20px;                  /* Espaçamento entre os ícones */
+    margin-top: 20px;
+}
+
+.tecnologias-grid img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease;
+    filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.3));
+}
+
+.tecnologias-grid img:hover {
+    transform: scale(1.2);
+    filter: drop-shadow(0 0 8px rgb(255, 4, 150));
+}
+
+
+/* Projetos */
+.projeto {
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--spacing-medium);
+    padding: var(--spacing-medium);
+    background-color: #ffffff;
+    border-radius: var(--border-radius);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.projeto:hover {
+    background-color: #f0f0f0;
+    transform: translateY(-5px);
+}
+
+.projeto-imagem {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: var(--border-radius);
+    margin-right: var(--spacing-medium);
+}
+
+.projeto-texto {
+    flex: 1;
+}
+
+.projeto-texto h3 {
+    color: var(--color-secondary);
+    font-size: var(--font-size-medium);
+    margin-bottom: var(--spacing-small);
+}
+
+.projeto-texto p {
+    color: var(--color-text-light);
+    font-size: var(--font-size-small);
+    margin-bottom: var(--spacing-small);
+}
+
+.projeto-texto a {
+    color: var(--color-primary);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.projeto-texto a:hover {
+    color: var(--color-secondary);
+}
+
+@media (max-width: 768px) {
+    .projeto {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .projeto-imagem {
+        margin-right: 0;
+        margin-bottom: var(--spacing-small);
+    }
+}
+
+/* Contato e ícones sociais */
+.social-icons {
+    margin-top: var(--spacing-medium);
+    text-align: center;
+}
+
+.social-icons a {
+    font-size: var(--font-size-medium);
+    margin: 0 var(--spacing-medium);
+    color: var(--color-text);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-small);
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: var(--color-secondary);
+}
+
+/* Footer */
+footer {
+    background-color: transparent;
+    color: #333;
+    font-size: 0.8rem;
+    text-align: center;
+    padding: 8px 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 0;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: var(--spacing-medium);
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: var(--spacing-small);
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #aaa;
+}
+
+.close:hover {
+    color: #000;
+}
+
+/* Impede a rolagem da página quando o modal está aberto */
+body.modal-open {
+    overflow: hidden;
+}
+
+#contato h2 {
+    text-align: center;
+}
+
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 768px) {
+    /* Ajuste na seção de contato */
+    .social-icons a {
+        font-size: 1.2rem; /* Tamanho reduzido dos ícones */
+        margin: 0 5px; /* Espaçamento reduzido entre os ícones */
+        display: inline-block; /* Exibe os ícones em linha */
+        padding: 0; /* Remove padding extra */
+    }
+
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px; /* Espaçamento reduzido entre os ícones */
+    }
+
+    .social-icons p {
+        display: none; /* Esconde o texto "Você pode me encontrar em:" */
+    }
+
+    /* Esconde o texto dentro dos links dos ícones */
+    .social-icons a span {
+        display: none;
+    }
+}
