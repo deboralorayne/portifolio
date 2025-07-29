@@ -1,8 +1,6 @@
-# Portfólio • Débora Lorayne 🌸
+# Portfólio • Debora Lorayne 🌸
 
 Bem-vindo(a) ao meu portfólio! Aqui você encontrará os principais projetos que desenvolvi, tecnologias que utilizo e um pouco sobre minha experiência, incluindo meu trabalho voluntário com o **Código Rosa**.
-
-![Screenshot do site](https://user-images.githubusercontent.com/00000000/your-screenshot.jpg) <!-- (substitua pelo link real se quiser) -->
 
 ## 🌐 Acesse online
 
@@ -30,7 +28,7 @@ Sou uma desenvolvedora com paixão por criar interfaces acessíveis, responsivas
 - [LinkedIn](https://www.linkedin.com/in/deboralorayne/)
 - [GitHub](https://github.com/deboralorayne)
 - Email: deboralorrayne23@gmail.com
-- WhatsApp: [Clique para enviar mensagem](https://wa.me/55SEUNUMEROAQUI)
+- WhatsApp: [Clique para enviar mensagem](https://wa.me/5535987066779)
 
 ---
 
